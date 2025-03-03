@@ -32,3 +32,18 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
+let slideIndex = 0;
+
+function moveSlide(direction) {
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const slideWidth = document.querySelector('.slide').offsetWidth; // Ширина одного слайда
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    if (direction === 1) { // Вправо
+        slideIndex = (slideIndex + 1) % totalSlides; // Переходим к следующему слайду
+    } else { // Влево
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides; // Переходим к предыдущему слайду
+    }
+
+    sliderWrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+}

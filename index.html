@@ -36,12 +36,23 @@
             <li>Помощь с домашним заданием: [Цена] руб./час</li>
         </ul>
     </section>
-
     <section id="gallery">
         <h2>Галерея</h2>
-        <div class="gallery-container">
-            <img src="images/classroom1.jpg" alt="Рабочее место 1">
-            <img src="images/classroom2.jpg" alt="Рабочее место 2">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="images/classroom1.jpg" alt="Рабочее место 1">
+                </div>
+                <div class="slide">
+                    <img src="images/classroom2.jpg" alt="Рабочее место 2">
+                </div>
+                <div class="slide">
+                    <img src="images/classroom3.jpg" alt="Рабочее место 3">
+                </div>
+                <!-- Добавьте больше фотографий по необходимости -->
+            </div>
+            <button class="slider-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-control next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </section>
 

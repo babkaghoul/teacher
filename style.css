@@ -97,3 +97,49 @@ footer {
     display: block;
     margin: 0 auto; /* Центрируем стрелку */
 }
+.slider-container {
+    position: relative;
+    width: 100%;  /* Или задайте фиксированную ширину, например, width: 600px; */
+    overflow: hidden;
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+}
+
+.slider-wrapper {
+    display: flex; /* Размещаем слайды в ряд */
+    transition: transform 0.3s ease-in-out; /* Плавная анимация при переключении */
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;          /* Добавляем flexbox */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center;     /* Центрируем содержимое по вертикали (если нужно) */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* Убираем отступы снизу у картинок */
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Отображаем кнопки поверх слайдов */
+    font-size: 20px;
+}
+
+.slider-control.prev {
+    left: 0;
+}
+
+.slider-control.next {
+    right: 0;
+}
