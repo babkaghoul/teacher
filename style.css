@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+section img {
+    max-width: 200px;
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 5px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-container img {
+    width: 300px; /* Ширина картинки */
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+#backToTopBtn {
+    display: none; /* Сначала скрываем кнопку */
+    position: fixed; /* Фиксированное положение на экране */
+    bottom: 20px; /* Отступ от нижнего края */
+    right: 20px; /* Отступ от правого края */
+    z-index: 99; /* Поверх всех остальных элементов */
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем обводку при нажатии */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: white; /* Белый цвет текста */
+    cursor: pointer; /* Курсор в виде руки */
+    padding: 10px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Плавное изменение цвета фона */
+}
+
+#backToTopBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Более темный фон при наведении */
+}
+
+/* Стили для SVG (стрелки) */
+#backToTopBtn svg {
+    display: block;
+    margin: 0 auto; /* Центрируем стрелку */
+}
